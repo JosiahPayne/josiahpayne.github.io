@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Josiah's Blog</title>
+    <link>https://www.example.com</link>
+    <description>This is an example RSS feed</description>
+    <language>en-gb</language>
+    <pubDate>Tue, 05 Mar 2025</pubDate>
+
+    <item>
+      <title>Article Template</title>
+      <link>/website/pages/articles/article.html</link>
+      <description>test?</description>
+      <pubDate>05 Mar 2025</pubDate>
+      <guid>/pages</guid>
+    </item>
+
+    <item>
+      <title>My Travels</title>
+      <link>/website/pages/articles/travels.html</link>
+      <description>My Travels to the Orkney Islands</description>
+      <pubDate>18 May 2025</pubDate>
+      <guid>https://www.example.com/article2</guid>
+    </item>
+
+
+    <item>
+      <title>Happy Easter</title>
+      <link>/website/pages/articles/easter.html</link>
+      <description>Christ has Risen!</description>
+      <pubDate>20 Mar 2025</pubDate>
+      <guid>https://www.example.com/article2</guid>
+    </item>
+
+    <item>
+      <title>Game Dev log</title>
+      <link>/website/pages/articles/spacegame.html</link>
+      <description>Christ has Risen!</description>
+      <pubDate>20 Mar 2025</pubDate>
+      <guid>https://www.example.com/article2</guid>
+    </item>
+
+
+  </channel>
+</rss>
