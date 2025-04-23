@@ -2,7 +2,7 @@
 <rss version="2.0">
   <channel>
     <title>Josiah's Blog</title>
-    <link>https://www.example.com</link>
+    <link>https://josiahpayne.github.io/pages/Blog</link>
     <description>This is an example RSS feed</description>
     <language>en-gb</language>
     <pubDate>Tue, 05 Mar 2025</pubDate>
@@ -12,7 +12,7 @@
       <link>/pages/articles/travels.html</link>
       <description>My Travels to the Orkney Islands</description>
       <pubDate>18 May 2025</pubDate>
-      <guid>https://www.example.com/article2</guid>
+      <guid>https://josiahpayne.github.io/pages/articles/travels.html</guid>
     </item>
 
 
@@ -21,7 +21,7 @@
       <link>/pages/articles/easter.html</link>
       <description>Christ has Risen!</description>
       <pubDate>20 Mar 2025</pubDate>
-      <guid>https://www.example.com/article2</guid>
+      <guid>https://josiahpayne.github.io/pages/articles/easter.html</guid>
     </item>
 
     <item>
@@ -29,7 +29,7 @@
       <link>/pages/articles/spacegame.html</link>
       <description>Christ has Risen!</description>
       <pubDate>20 Mar 2025</pubDate>
-      <guid>https://www.example.com/article2</guid>
+      <guid>https://josiahpayne.github.io/pages/articles/spacegame.html</guid>
     </item>
 
 
