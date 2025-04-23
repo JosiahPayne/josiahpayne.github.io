@@ -8,14 +8,6 @@
     <pubDate>Tue, 05 Mar 2025</pubDate>
 
     <item>
-      <title>Article Template</title>
-      <link>/pages/articles/article.html</link>
-      <description>test?</description>
-      <pubDate>05 Mar 2025</pubDate>
-      <guid>/pages</guid>
-    </item>
-
-    <item>
       <title>My Travels</title>
       <link>/pages/articles/travels.html</link>
       <description>My Travels to the Orkney Islands</description>
