@@ -22,7 +22,7 @@ async function loadRSS() {
 
             
             let pubDate = item.querySelector("pubDate")?.textContent || "";
-
+            //display title, desciption and date
             RSSItems += `
                 <div>
                     <h2><a href="${link}" target="_blank">${title}</a></h2>
@@ -33,11 +33,7 @@ async function loadRSS() {
             `;
         });
 
-        document.getElementById("rss-feed").innerHTML = RSSItems || "no items";
-    } catch (error) {
-        document.getElementById("rss-feed").innerHTML = "Can't find rss file";
     }
-
 
 
 }
