@@ -1,4 +1,4 @@
-async function loadRssFeed() {
+async function loadRSSFeed() {
 
 
     const feedFetch = await fetch("rss.xml");
@@ -8,10 +8,10 @@ async function loadRssFeed() {
     
     const xml = new window.DOMParser().parseFromString(feedData, "text/xml");
     
-    const items = xml.querySelectorAll("item");
+    const RSSitems = xml.querySelectorAll("item");
     let output = "";
 
-    items.forEach(item => {
+    RSSitems.forEach(item => {
         const title = item.querySelector("title").textContent;
 
 
@@ -41,4 +41,4 @@ async function loadRssFeed() {
     document.getElementById("rss-feed").innerHTML = output;
 }
 
-loadRssFeed();
+loadRSSFeed();
