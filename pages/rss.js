@@ -3,10 +3,10 @@ async function loadRssFeed() {
 
     const feedFetch = await fetch("rss.xml");
     
-    const data = await feedFetch.text();
+    const feedData = await feedFetch.text();
     
     
-    const xml = new window.DOMParser().parseFromString(data, "text/xml");
+    const xml = new window.DOMParser().parseFromString(feedData, "text/xml");
     
     const items = xml.querySelectorAll("item");
     let output = "";
