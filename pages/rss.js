@@ -25,7 +25,7 @@ async function loadRSS() {
             //display title, desciption and date
             RSSItems += `
                 <div>
-                    <h2><a href="${link}" target="_blank">${title}</a></h2>
+                    <h2><a href="${link}">${title}</a></h2>
                     
                     <p>${description}</p>
                     <p>${pubDate}</p>
@@ -33,7 +33,12 @@ async function loadRSS() {
             `;
         });
 
+        //catch erros
+        document.getElementById("rss-feed").innerHTML = RSSItems || "no items";
+    } catch (error) {
+        document.getElementById("rss-feed").innerHTML = "Can't find rss file";
     }
+
 
 
 }
