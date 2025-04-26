@@ -1,9 +1,9 @@
 async function loadRSSFeed() {
 
 
-    const feedFetch = await fetch("rss.xml");
+    const fetchFeed = await fetch("rss.xml");
     
-    const feedData = await feedFetch.text();
+    const feedData = await fetchFeed.text();
     
     
     const xml = new window.DOMParser().parseFromString(feedData, "text/xml");
