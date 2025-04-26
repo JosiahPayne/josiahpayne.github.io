@@ -1,48 +1,44 @@
-//load the feed
-async function loadRSS() {
+async function loadRssFeed() {
+
+
+    const feedFetch = await fetch("rss.xml");
+    
+    const data = await feedFetch.text();
     
     
+    const xml = new window.DOMParser().parseFromString(data, "text/xml");
     
-    try {
-        //fetch file
-        const response = await fetch("rss.xml");
-        //declare varibles to pass it through text
-        const parser = new DOMParser();
-        const text = await response.text();
+    const items = xml.querySelectorAll("item");
+    let output = "";
 
-        const xml = parser.parseFromString(text, "text/xml");
-        //declare varible to store RSSItems
-        let RSSItems = "";
-        xml.querySelectorAll("item").forEach(item => { 
+    items.forEach(item => {
+        const title = item.querySelector("title").textContent;
 
-            let title = item.querySelector("title").textContent;
 
-            let link = item.querySelector("link").textContent;
-            let description = item.querySelector("description").textContent;
+        const link = item.querySelector("link").textContent;
 
-            
-            let pubDate = item.querySelector("pubDate")?.textContent || "";
-            //display title, desciption and date
-            RSSItems += `
-                <div>
-                    <h2><a href="${link}">${title}</a></h2>
-                    
-                    <p>${description}</p>
-                    <p>${pubDate}</p>
-                </div>
-            `;
-        });
 
-        //catch erros
-        document.getElementById("rss-feed").innerHTML = RSSItems || "no items";
-    } catch (error) {
-        document.getElementById("rss-feed").innerHTML = "Can't find rss file";
-    }
+        const description = item.querySelector("description").textContent;
+
+        const pubDate = item.querySelector("pubDate").textContent;
 
 
 
+        output += `
+            <div>
+                <h3><a href="${link}">${title}</a></h3>
+                
+                <p>${description}</p>
+
+                <small>${pubDate}</small>
+                <hr>
+            </div>
+        `;
+
+    });
+
+    
+    document.getElementById("rss-feed").innerHTML = output;
 }
 
-
-//run it
-loadRSS();
+loadRssFeed();
