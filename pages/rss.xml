@@ -3,33 +3,30 @@
   <channel>
     <title>Josiah's Blog</title>
     <link>https://josiahpayne.github.io/pages/Blog</link>
-    <description>This is an example RSS feed</description>
+    <description>Josiah Payne's blog</description>
     <language>en-gb</language>
     <pubDate>Tue, 05 Mar 2025</pubDate>
 
     <item>
       <title>My Travels</title>
-      <link>/pages/articles/travels.html</link>
+      <link>https://josiahpayne.github.io/pages/articles/travels.html</link>
       <description>My Travels to the Orkney Islands</description>
       <pubDate>18 May 2025</pubDate>
-      <guid>https://josiahpayne.github.io/pages/articles/travels.html</guid>
     </item>
 
 
     <item>
       <title>Happy Easter</title>
-      <link>/pages/articles/easter.html</link>
+      <link>https://josiahpayne.github.io/pages/articles/easter.html</link>
       <description>Christ has Risen!</description>
       <pubDate>20 Mar 2025</pubDate>
-      <guid>https://josiahpayne.github.io/pages/articles/easter.html</guid>
     </item>
 
     <item>
       <title>Game Dev log</title>
-      <link>/pages/articles/spacegame.html</link>
+      <link>https://josiahpayne.github.io/pages/articles/spacegame.html</link>
       <description>My game log</description>
       <pubDate>20 Mar 2025</pubDate>
-      <guid>https://josiahpayne.github.io/pages/articles/spacegame.html</guid>
     </item>
 
 
