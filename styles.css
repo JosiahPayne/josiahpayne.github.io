@@ -26,6 +26,10 @@ nav ul {
     text-align: center;
 }
 
+nav ul li {
+    display: inline;
+   
+}
 
 nav ul li a {
     color: white;
@@ -79,5 +83,5 @@ img.resizable-image {
 .p1 {
     font-size: 20px;
 
-    line-height: 2;
+    line-height: 2.5;
 }
